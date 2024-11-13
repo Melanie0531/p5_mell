@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="login.css">
+	<title>
+		Login dan Register
+	</title>
+</head>
+
+<body>
+	<div id="container" class="container">
+		<!-- FORM  -->
+		<div class="row">
+			<!-- REGISTER -->
+			<div class="col align-items-center flex-col sign-up">
+				<div class="form-wrapper align-items-center">
+					<form action="Homepage.html" class="form sign-up">
+						<div class="input-group">
+							<i class='bx bxs-user'></i>
+							<input type="text" placeholder="Username" required>
+						</div>
+						<div class="input-group">
+							<i class='bx bx-mail-send'></i>
+							<input type="email" placeholder="Email" required>
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" placeholder="Password" required>
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" placeholder="Confirm password" required>
+						</div>
+						<button type="submit">
+							Register
+						</button>
+						<p>
+							<span>
+								Sudah Punya Akun?
+							</span>
+							<b onclick="toggle()" class="pointer">
+								Login
+							</b>
+						</p>
+					</form>
+				</div>
+				<div class="form-wrapper">
+					<div class="social-list align-items-center sign-up">
+						<div class="align-items-center facebook-bg">
+							<i class='bx bxl-facebook'></i>
+						</div>
+						<div class="align-items-center google-bg">
+							<i class='bx bxl-google'></i>
+						</div>
+						<div class="align-items-center twitter-bg">
+							<i class='bx bxl-twitter'></i>
+						</div>
+						<div class="align-items-center insta-bg">
+							<i class='bx bxl-instagram-alt'></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--REGISTER -->
+			<!-- LOGIN-->
+			<div class="col align-items-center flex-col sign-in">
+				<div class="form-wrapper align-items-center">
+					<form action="Homepage.html" class="form sign-in">
+						<div class="input-group">
+							<i class='bx bxs-user'></i>
+							<input type="text" placeholder="Username" required>
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" placeholder="Password" required>
+						</div>
+                        <div class="remember-me">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">Remember Me</label>
+                        
+                            <p>
+                                <b>
+                                 <a href="#" class="forgot-password">Lupa password?</a>
+                                </b>
+                            </p>
+                        
+                        </div>
+						<button type="submit">
+							Login
+						</button>
+						
+						
+						<p>
+							<span>
+								Tidak Punya Akun?
+							</span>
+							<b onclick="toggle()" class="pointer">
+								Register
+							</b>
+						</p>
+					</form>
+				</div>
+				<div class="form-wrapper">
+					<div class="social-list align-items-center sign-in">
+						<div class="align-items-center facebook-bg">
+							<i class='bx bxl-facebook'></i>
+						</div>
+						<div class="align-items-center google-bg">
+							<i class='bx bxl-google'></i>
+						</div>
+						<div class="align-items-center twitter-bg">
+							<i class='bx bxl-twitter'></i>
+						</div>
+						<div class="align-items-center insta-bg">
+							<i class='bx bxl-instagram-alt'></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- LOGIN -->
+		</div>
+		<!-- SELESAI -->
+		<!-- ISI KONTEN -->
+		<div class="row content-row">
+			<!-- LOGIN KONTEN -->
+			<div class="col align-items-center flex-col">
+				<div class="text sign-in">
+					<h2>
+						Selamat Datang Kembali !!!
+					</h2>
+					<p>
+					Selamat Datang Kembali di Form Login Jurusan Teknik Kendaraan Ringan (TKR) 
+                    <br>
+                    "Masuk untuk mengakses informasi dan layanan yang tersedia di jurusan Teknik Kendaraan Ringan.
+					</p>
+				</div>
+				<div class="img sign-in">
+					<img src="ilustrasi1.png" alt="Ilustrasi">
+				</div>
+			</div>
+			<!-- SELESAI -->
+			<!-- REGISTER KONTEN-->
+			<div class="col align-items-center flex-col">
+				<div class="img sign-up">
+					<img src="ilustrasi2.png" alt="Ilustrasi">
+				</div>
+				<div class="text sign-up">
+					<h2>
+						Selamat Datang !!!
+					</h2>
+					<p>
+						Selamat Datang di Form Login Jurusan Teknik Kendaraan Ringan (TKR) 
+						<br>
+						"Masuk untuk mengakses informasi dan layanan yang tersedia di jurusan Teknik Kendaraan Ringan.
+					</p>
+				</div>
+			</div>
+			<!-- SELESAI -->
+		</div>
+		
+	</div>
+
+	<script src="login.js"></script>
+	<script src="script.js"></script>
+	
+</body>
+
+</html>
